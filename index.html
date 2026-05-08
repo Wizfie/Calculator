@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator — Wisfie Syahbani</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <div class="calculator" id="calculator">
+      <!-- Display -->
+      <div class="display">
+        <div class="display-expression" id="expression">0</div>
+        <div class="display-result" id="result"></div>
+      </div>
+
+      <!-- Icon Bar -->
+      <div class="icon-bar">
+        <button class="icon-btn" id="historyBtn" title="Riwayat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+        </button>
+
+        <!-- Toggle Dark/Light Mode -->
+        <button class="icon-btn toggle-btn" id="themeToggle" title="Ganti Mode">
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <!-- Backspace -->
+        <button class="icon-btn" id="backspaceBtn" title="Hapus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+            <line x1="18" y1="9" x2="12" y2="15" />
+            <line x1="12" y1="9" x2="18" y2="15" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="btn func" data-value="AC">AC</button>
+        <button class="btn func" data-value="()">()</button>
+        <button class="btn func" data-value="%">%</button>
+        <button class="btn operator" data-value="÷">÷</button>
+
+        <button class="btn number" data-value="7">7</button>
+        <button class="btn number" data-value="8">8</button>
+        <button class="btn number" data-value="9">9</button>
+        <button class="btn operator" data-value="×">×</button>
+
+        <button class="btn number" data-value="4">4</button>
+        <button class="btn number" data-value="5">5</button>
+        <button class="btn number" data-value="6">6</button>
+        <button class="btn operator" data-value="−">−</button>
+
+        <button class="btn number" data-value="1">1</button>
+        <button class="btn number" data-value="2">2</button>
+        <button class="btn number" data-value="3">3</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <button class="btn func" data-value="+/-">+/−</button>
+        <button class="btn number" data-value="0">0</button>
+        <button class="btn number" data-value=".">.</button>
+        <button class="btn equals" data-value="=">=</button>
+      </div>
+
+      <!-- History Panel -->
+      <div class="history-panel" id="historyPanel">
+        <div class="history-header">
+          <span>Riwayat</span>
+          <button id="clearHistoryBtn">Hapus Semua</button>
+        </div>
+        <ul id="historyList"></ul>
+        <p class="history-empty" id="historyEmpty">Belum ada riwayat.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Info Card -->
+    <div class="info-card">
+      <div class="info-logo">🎓</div>
+      <h2 class="info-name">Wisfie Syahbani</h2>
+      <table class="info-table">
+        <tr>
+          <td>NIM</td>
+          <td>231011450603</td>
+        </tr>
+        <tr>
+          <td>Kelas</td>
+          <td>05TPLE 006</td>
+        </tr>
+        <tr>
+          <td>Mata Kuliah</td>
+          <td>Pemograman Web 1</td>
+        </tr>
+        <tr>
+          <td>Dosen</td>
+          <td>Fajar Agung Nugroho, S.Kom., M.Kom.</td>
+        </tr>
+        <tr>
+          <td>Universitas</td>
+          <td>Universitas Pamulang</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
